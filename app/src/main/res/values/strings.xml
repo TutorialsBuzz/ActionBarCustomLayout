@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CustomToolbarLayout</string>
+
+    <string name="action_item1">Item 01</string>
+    <string name="action_item2">Item 02</string>
+    <string name="action_item3">Item 03</string>
+    <string name="action_item4">Item 04</string>
+
+    <string name="action_sub_item1">Sub Item 01</string>
+    <string name="action_sub_item2">Sub Item 02</string>
+</resources>

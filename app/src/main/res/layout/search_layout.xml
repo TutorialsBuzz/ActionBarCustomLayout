@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/search_bg"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:gravity="center"
+    android:paddingLeft="10dp"
+    android:paddingTop="8dp"
+    android:paddingRight="0dp"
+    android:paddingBottom="8dp">
+
+    <ImageView
+        android:id="@+id/voice_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_voice_selector"
+        android:scaleType="fitXY" />
+
+
+    <ImageView
+        android:id="@+id/close_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/stop_url_selector"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/voice_icon"
+        android:background="@null"
+        android:focusableInTouchMode="true"
+        android:gravity="left|center_vertical"
+        android:hint="Search or type Url ..."
+        android:imeOptions="actionGo|flagNoExtractUi"
+        android:inputType="textUri"
+        android:paddingLeft="6dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="2dp"
+        android:singleLine="true"
+        android:textColor="@color/search_text_color"
+        android:textColorHighlight="@color/search_text_highlight"
+        android:textColorHint="@color/voice_icon_color"
+        android:textCursorDrawable="@drawable/custom_cursor_drawable"
+        android:textSize="16sp"
+        tools:ignore="RtlHardcoded" />
+
+</RelativeLayout>
+
